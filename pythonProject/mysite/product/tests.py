@@ -4,6 +4,13 @@ from .mytests.intergration_test import *
 from .mytests.e2e_test import *
 
 
+class ClassTest(TestCase):
+    def setUp(self):
+        self.a = 0
+        self.b = 0
+
+    def testCompare(self):
+        self.assertEqual(self.a, self.b)
 
 '''
 # Place Model Test
@@ -116,6 +123,6 @@ class PlaceTest(TestCase):
         self.assertEqual(len(_img), len(img))
         for i in range(len(_img)):
             self.assertEqual(img[i], _img[i])
-'''
 
+'''
 

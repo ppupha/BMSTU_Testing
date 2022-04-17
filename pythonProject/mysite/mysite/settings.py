@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'behave_django',
     'login.apps.LoginConfig',
     'product.apps.ProductConfig',
+    #'product',
     'user.apps.UserConfig',
     'home.apps.HomeConfig',
     'webLab.apps.WeblabConfig',
