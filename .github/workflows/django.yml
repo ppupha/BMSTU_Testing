@@ -34,7 +34,7 @@ jobs:
         cd product
         python ../manage.py test product
     - name: run Server
-      working-directory: ./pythonProjectmysite
+      working-directory: ./pythonProject/mysite
       run: |
-        python manage.py runserver
+        python ./manage.py runserver
 
