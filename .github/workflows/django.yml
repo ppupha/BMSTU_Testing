@@ -33,3 +33,8 @@ jobs:
       run: |
         cd product
         python ../manage.py test product
+    - name: run Server
+      working-directory: ./pythonProject
+      run: |
+        cd ./mysite
+        python ./manager.py runserver
