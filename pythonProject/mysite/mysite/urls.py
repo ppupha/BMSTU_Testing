@@ -26,10 +26,10 @@ app_name = 'admin'
 
 urlpatterns = [
     path('', include('home.urls')),
-    #path('', include('login.urls')),
     path('products/', include('product.urls')),
     path('user/', include('user.urls')),
     path('admin/', admin.site.urls, name = 'admin'),
+    path('api/', include('webLab.urls'))
 
 ]
 

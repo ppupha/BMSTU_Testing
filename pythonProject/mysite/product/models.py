@@ -22,7 +22,7 @@ class City(models.Model):
 class Place(models.Model):
 
     Name = models.CharField(max_length= 100, default=' ')
-    City = models.ForeignKey(City, on_delete= False, default= 1)
+    City = models.ForeignKey(City, on_delete= models.CASCADE, default= 1)
     Rating = models.DecimalField(default= 0.0, max_digits= 3, decimal_places=1)
     Address = models.CharField(max_length= 100, default= '')
     Description = models.TextField(default='')
