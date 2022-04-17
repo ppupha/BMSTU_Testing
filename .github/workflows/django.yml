@@ -29,4 +29,5 @@ jobs:
     - name: Run Tests
       working-directory: ./pythonProject/mysite
       run: |
-        python ./manage.py test
+        cd product
+        python ../manage.py test product
