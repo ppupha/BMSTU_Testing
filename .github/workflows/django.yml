@@ -1,12 +1,12 @@
-name: Django Develop CI
+name: Django Main CI
 
 on:
   push:
-    branches:
+    branches: 
       - main
       - develop
   pull_request:
-    branches:
+    branches: 
       - main
       - develop
 
@@ -35,3 +35,5 @@ jobs:
       run: |
         cd product
         python ../manage.py test product
+    - name: Run App
+      run: |
